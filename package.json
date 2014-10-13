@@ -1,0 +1,32 @@
+{
+  "name": "nfe",
+  "version": "2.0.0",
+  "description": "front end integrated solution, fis, nfejs",
+  "main": "nfe.js",
+  "preferGlobal": true,
+  "bin": {
+    "nfe": "bin/nfe"
+  },
+  "keywords": [
+    "fis",
+    "nfejs",
+    "require"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mfylee/nfe.git"
+  },
+  "author": "mfylee@163.com",
+  "dependencies": {
+    "fis": "1.7.14",
+    "fis-command-server": "0.6.11",
+    "fis-lint-jshint": "0.0.9",
+    "fis-optimizer-html-minifier": "0.0.9",
+    "fis-parser-handlebars": "0.0.1",
+    "fis-parser-less": "0.1.1",
+    "fis-parser-marked": "0.0.5",
+    "nfe-command-install": "0.0.2",
+    "underscore": "^1.6.0"
+  },
+  "license": "MIT"
+}
