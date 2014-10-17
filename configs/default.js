@@ -47,6 +47,10 @@ module.exports = {
 			md:'html'
 		},
 		path:[{
+			reg: /^\/nfe\/(.*)$/i,
+			useComplie:false,
+			release: false
+		},{
 			//reg:/^\/dep\/(\w+(?:\/[\d\.]*)?)\/(\w+)\.(js|coffee|less|css)$/i,
 			reg:/^\/dep\/(.*)\.(js|coffee|less|css)$/i,
 			isMod:false,
@@ -103,10 +107,6 @@ module.exports = {
 			useSprite:true,
 			isHtmlLike: true,
 			release:'/template/$1'
-		},{
-			reg: /^\/nfe(.*)$/i,
-			useComplie:false,
-			release: false
 		},{
 			reg:'**',
 			useHash:false,
