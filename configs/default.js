@@ -104,6 +104,10 @@ module.exports = {
 			isHtmlLike: true,
 			release:'/template/$1'
 		},{
+			reg: /^\/nfe(.*)$/i,
+			useComplie:false,
+			release: false
+		},{
 			reg:'**',
 			useHash:false,
 			useComplie:false
