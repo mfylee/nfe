@@ -59,10 +59,15 @@ module.exports = {
 			url:'${urlPrefix}/static/dep/$1.$2',
 			release:'/static/dep/$1.$2'
 		},{
-			reg:/^\/dep\/(.*)\.(git|png|jpg|jpeg|bmp)$/i,
+			reg:/^\/dep\/(.*)\.(gif|png|jpg|jpeg|bmp)$/i,
 			useSprite:false,
 			url:'${urlPrefix}/static/dep/img/$1.$2',
 			release:'/static/dep/img/$1.$2'
+		},{
+			reg:/^\/dep\/(.*)\.(eot|ttf|woff|svg)$/i,
+			useSprite:false,
+			url:'${urlPrefix}/static/dep/fonts/$1.$2',
+			release:'/static/dep/fonts/$1.$2'
 		},{
 			reg:/^\/libs\/(.*\.(js|coffee|less|css))$/i,
 			isMod:false,
@@ -86,7 +91,7 @@ module.exports = {
 			url:'${urlPrefix}/static/css/$1',
 			release:'/static/css/$1'
 		},{
-			reg:/^\/src\/(.*)\.(git|png|jpg|jpeg|bmp)$/i,
+			reg:/^\/src\/(.*)\.(gif|png|jpg|jpeg|bmp)$/i,
 			useSprite:true,
 			url:'${urlPrefix}/static/img/$1.$2',
 			release:'/static/img/$1.$2'
