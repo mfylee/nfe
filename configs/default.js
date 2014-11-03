@@ -69,7 +69,7 @@ module.exports = {
 			url:'${urlPrefix}/static/dep/fonts/$1.$2',
 			release:'/static/dep/fonts/$1.$2'
 		},{
-			reg:/^\/libs\/(.*\.(js|coffee|less|css))$/i,
+			reg:/^\/libs\/(.*)$/i,
 			isMod:false,
 			useSprite:true,
 			id:'$1',
